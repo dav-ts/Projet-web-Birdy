@@ -1,0 +1,19 @@
+form{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    border-style: solid;
+    padding: 15px;
+    width: 300px;
+    margin: auto; /*Que calcule automatiquement les distance pour centrer*/
+}
+h2{
+    color: blue;
+    text-shadow: 1px 1px 0px black;
+    text-align: center;
+}
+input{
+    margin-bottom:1.5em;
+}
+label[for$="nom"]{
+    text-align: center;
+}
