@@ -50,10 +50,13 @@
 }
 .post-icons{
     margin-top: 1rem;
+    display: flex;
 }
 .post-icons .icon{
     font-size: 1.8rem;
     color: rgb(12, 11, 11);
-    margin-right: 11rem;
-    margin-left: 11rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    align-items: center;
+    display: flex;
 }

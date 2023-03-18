@@ -2,7 +2,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import NewPost from "./NewPost";
-import Post from "./Post";
+import Feed from "./Feed";
 import '../styles/Home.css'
 import ListFollow from "./ListFollow";
 
@@ -11,16 +11,9 @@ function Home(){
     return(
         <section className="feeds-page">
             <NavBar/>
-            <div className="feeds-content">
-                <NewPost page="Home" />
-                <div className="posts">
-                    <Post/> 
-                    <Post/> 
-                    <Post/> 
-                    <Post/> 
-                </div>
-               <ListFollow nom="Qui suivre" css="Home"/>
-            </div> 
+            <Feed page="Home"/>
+            <ListFollow nom="Qui suivre" css="Home"/>
+            
         </section>
     );
 }

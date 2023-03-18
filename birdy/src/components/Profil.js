@@ -2,7 +2,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import NewPost from "./NewPost";
-import Post from "./Post";
+import Feed from "./Feed";
 import '../styles/Profil.css'
 import salade from "./Images/salade3.jpg"
 import Follow from "./Follow";
@@ -22,19 +22,11 @@ function Profil(){
                     </div>   
                     <div className="profileInfo">        
                         <h4 className="profileInfoName"> Racha nad</h4>
-                        <span className="profileBio">Hello ! :/ </span>
+                        <span className="profileBio">Hello ! :zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz </span>
                     </div>            
                 </div>
                 <div className="flex" >
-                    <div className="feeds-content">
-                        <NewPost page="Profil" />
-                        <div className="posts">
-                            <Post/> 
-                            <Post/> 
-                            <Post/> 
-                            <Post/> 
-                        </div>
-                    </div> 
+                    <Feed page="Profile"/>
                     
                     <div className="sideBar">
                         <div className="rightBarInfo">
@@ -60,7 +52,7 @@ function Profil(){
                                 <span className="rightBarInfoValue">New York</span>
                             </div> 
                         </div>
-                        <div className="fiends">
+                        <div className="friends">
                             <Follow />
                             <Follow />
                             <Follow />

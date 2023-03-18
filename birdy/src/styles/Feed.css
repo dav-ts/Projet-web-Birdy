@@ -1,0 +1,10 @@
+.feeds-content{
+    padding-top: 1.6rem;
+    display: grid;
+    grid-template-rows: repeat(2,min-content);
+}
+.posts{
+    grid-column: 2 / 3;
+    grid-row: 2 / -1;
+    background-color: white;
+}
