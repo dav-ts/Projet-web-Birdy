@@ -1,8 +1,7 @@
 # Projet-web-Birdy
 
 ```mermaid
-  flowchart TD
-  Arbre Birdy;
+  Arbre_Birdy TD
      A[Mainpage]-->B[SignIn];
      A-->C[LogIn];
      A-->D[profil];
