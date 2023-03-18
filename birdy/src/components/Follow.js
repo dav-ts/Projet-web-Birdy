@@ -1,5 +1,6 @@
 import React from "react";
 import bird from"./Images/bird.png"
+import "../styles/Follow.css";
 
 function Follow(props){
     return (

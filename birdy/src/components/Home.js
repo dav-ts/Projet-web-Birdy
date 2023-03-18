@@ -3,28 +3,23 @@ import React from "react";
 import NavBar from "./NavBar";
 import NewPost from "./NewPost";
 import Post from "./Post";
-import Follow from "./Follow";
 import '../styles/Home.css'
+import ListFollow from "./ListFollow";
+
 function Home(){
 
     return(
         <section className="feeds-page">
             <NavBar/>
             <div className="feeds-content">
-                <NewPost />
+                <NewPost page="Home" />
                 <div className="posts">
                     <Post/> 
                     <Post/> 
                     <Post/> 
                     <Post/> 
                 </div>
-                <div className="follow">
-                    <h3 className="follow-heading"> Qui suivre </h3>
-                    <Follow/>
-                    <Follow/>
-                    <Follow/>
-                    <Follow/>
-                </div>
+               <ListFollow nom="Qui suivre" css="Home"/>
             </div> 
         </section>
     );

@@ -3,7 +3,7 @@ import salade from "./Images/salade3.jpg";
 import bird from "./Images/bird.png";
 import {AiOutlineHeart} from "react-icons/ai";
 import {FaCheckCircle,FaRegComment} from "react-icons/fa";
-
+import "../styles/Post.css";
 function Post(){
     return(
         <div className="post">
@@ -13,7 +13,7 @@ function Post(){
             <div className="post-content">
                 <div className="post-user-info">
                     <h4> Racha Dac</h4>
-                    <i><FaCheckCircle/></i>
+                    <FaCheckCircle className="icon"/>
                     <span> @hahaha . 15m</span>
                 </div>
                 <p className="post-text">
@@ -26,8 +26,8 @@ function Post(){
                     <img src={salade} alt="post"/>
                 </div>
                 <div className="post-icons">
-                    <i><FaRegComment/></i>
-                    <i><AiOutlineHeart/></i>
+                    <FaRegComment className="icon"/>
+                    <AiOutlineHeart className="icon"/>
 
                 </div>
             </div>
