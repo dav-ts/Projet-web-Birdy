@@ -1,24 +1,51 @@
 h1{
-    color: blue;
+    color: black;
     text-shadow: 1px 1px 0px black;
     text-align: center;
 }
 
 
-form{
-    display: grid;
-    grid-template-columns: 150px 150px;
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border-radius: 10px;
     border-style: solid;
     padding: 15px;
-    width: 300px;
-    margin: auto; /*Que calcule automatiquement les distance pour centrer*/
-}
-input{
-    margin-bottom:1.5em;
+    margin: 0 auto;
+   
+  }
+
+  input[id=nom],
+  input[type="password"],
+  input[id="dateNaiss"],
+  input[id="email"] {
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5em;
     text-align: center;
-}
+  }
+  
 
 label[htmlFor$="nom"]{
     text-align: center;
     
 }
+.btn-submit{
+    display: flex;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 0.7rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 30%;
+}
+

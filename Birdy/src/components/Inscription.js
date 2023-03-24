@@ -15,6 +15,7 @@ function Inscription(){
         this.setState({ [name]: value });
     };
 
+
     const onSubmit = (e) => {
         e.preventDefault();
         const form = e.currentTarget;
@@ -22,19 +23,21 @@ function Inscription(){
 
         alert(`Submitted Name: ${name}`);
     };
+    
 
     return (<div> 
-        <h1>Inscription</h1>
-        <form>
-        <label htmlFor="fname"><big> Name : </big></label>
-
-        <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Votre nom et prenom.." /> 
+        <h1>Creez votre compte</h1>
         
-        <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Votre e-mail.."/>
-        <input value={dateNaissance} onChange={(e) => setDateNaissance(e.target.value)} placeholder="Votre Date de naissance.."/>
-        <input value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Votre mot de passe."/>
-        <input value={password2} onChange={(e) => setPassword2(e.target.value)} placeholder="Confirmez votre mot de passe.." />
-        <button type="submit">Submit</button>
+        <form>
+        <input id="nom" value={name} onChange={(e) => setName(e.target.value)} placeholder="Votre nom et prenom.." /> 
+        
+        <input id ="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Votre e-mail.."/>
+        <input id="dateNaiss" value={dateNaissance} onChange={(e) => setDateNaissance(e.target.value)} placeholder="Votre Date de naissance.."/>
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Votre mot de passe.."/>
+        <input type="password" value={password2} onChange={(e) => setPassword2(e.target.value)} placeholder="Confirmez votre mot de passe.." />
+        <button  className="btn-submit"><big>Submit</big></button>
+        <button  className="btn-submit"><big>Annuler </big></button>
+        
         </form>
 
     </div>
